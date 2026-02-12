@@ -76,7 +76,7 @@ chmod 400 ~/.ssh/quantum-key-phase1.pem
 
 ```bash
 # Obtenir votre IP publique
-MY_IP=$(curl -s ifconfig.me)
+MY_IP=$(curl -s -4 ifconfig.me)
 echo "Mon IP: $MY_IP"
 
 # Créer terraform.tfvars

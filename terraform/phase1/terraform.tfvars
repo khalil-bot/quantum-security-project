@@ -1,4 +1,4 @@
-my_ip         = "185.13.106.210"
+my_ip         = "90.38.138.122"
 key_name      = "quantum-key-phase1"
 instance_type = "t3.small"
 aws_region    = "eu-west-3"
