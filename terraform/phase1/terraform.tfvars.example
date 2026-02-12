@@ -1,0 +1,23 @@
+# Terraform Variables - Phase 1 (Learning)
+# Copy this file to terraform.tfvars and fill in your values
+
+# REQUIRED: Your public IP address
+# Get it with: curl ifconfig.me
+my_ip = "YOUR_IP_HERE"
+
+# REQUIRED: SSH key pair name in AWS
+# Must exist in your AWS account
+# Create with: aws ec2 create-key-pair --key-name quantum-key-phase1
+key_name = "quantum-key-phase1"
+
+# Instance type
+# t3.small: 2GB RAM, 2 vCPU - recommended (€15/month)
+# t2.micro: 1GB RAM, 1 vCPU - Free Tier eligible (€0/month if eligible)
+# t3.medium: 4GB RAM, 2 vCPU - if you need more resources (€30/month)
+instance_type = "t3.small"
+
+# AWS Region (Geneva proche)
+aws_region = "eu-west-3"
+
+# Project name (for tagging)
+project_name = "quantum-phase1"

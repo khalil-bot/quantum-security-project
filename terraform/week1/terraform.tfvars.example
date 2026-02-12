@@ -1,0 +1,17 @@
+# Terraform Variables pour Week 1
+# Remplacez les valeurs ci-dessous avec vos informations
+
+# OBLIGATOIRE: Votre adresse IP publique
+# Obtenez-la avec: curl ifconfig.me
+my_ip = "VOTRE_IP_ICI"  # Format: "1.2.3.4" (sans le /32)
+
+# Nom de votre clé SSH dans AWS
+# Doit correspondre au nom créé dans EC2 > Key Pairs
+key_name = "quantum-security-key"
+
+# Type d'instance EC2
+# Options:
+#   - "t2.micro"  : 1GB RAM, Free Tier eligible (si compte < 12 mois)
+#   - "t3.small"  : 2GB RAM, €15/mois (RECOMMANDÉ)
+#   - "t3.medium" : 4GB RAM, €30/mois (si besoins plus importants)
+instance_type = "t3.small"
